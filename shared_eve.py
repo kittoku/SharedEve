@@ -4,7 +4,7 @@ class SharedEve(torch.optim.Optimizer):
 
     """
     Following to Hiroaki Hayashi, Jayanth Koushik, Graham Neubig
-    "Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rates" (arXiv:1611.01505v1)
+    "Eve: A Gradient Based Optimization Method with Locally and Globally Adaptive Learning Rates" (arXiv:1611.01505v3)
     """
 
     def __init__(self, params, lr=1e-3, b1=0.9, b2=0.999, b3=0.999, eps=1e-8, c=10.0, f_min=0.0, weight_decay=0.0):
